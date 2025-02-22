@@ -1,0 +1,76 @@
+环境SEAS1 testa下
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw_resnet.yaml
+
+
+prw数据集上训练
+
+CUDA_VISIBLE_DEVICES=1 python train.py --cfg configs/prw_convnext.yaml
+tesla上 目前能支持b=4 但更大时候效果更好
+CUDA_VISIBLE_DEVICES=2 python train.py --cfg configs/prw_solider.yaml
+
+
+CUHK上面：
+CUDA_VISIBLE_DEVICES=3 python train.py --cfg configs/cuhk_sysu_resnet.yaml
+CUDA_VISIBLE_DEVICES=4 python train.py --cfg configs/cuhk_sysu_convnext.yaml
+
+CUDA_VISIBLE_DEVICES=5 python train.py --cfg configs/cuhk_sysu_solider.yaml
+
+
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/cuhk_sysu_convnext.yaml
+
+
+
+
+
+
+
+
+
+
+#YamlIncludeConstructor.add_to_loader_class(yaml.SafeLoader)
+train文件注销两句话 pip install pyyaml-include==1.3.1
+安装这个后取消 注释
+
+安装： torch匹配 python3.9
+
+conda install tensorboard -c conda-forge
+conda install -c conda-forge yamlinclude  报错了 先去注释代码
+pip install yacs
+pip install scipy
+pip install opencv-python
+pip install albumentations
+pip install pandas
+pip install tqdm
+pip install scikit-learn
+pip install pyyaml-include==1.3.1
+
+ln -s 映射地址
+修改路径：
+configs下的 ——path cuhk和prw都路径修改
+然后上传权重文件 solider
+scp -r /Users/zhangqixian/PycharmProjects/pycode/swin_tiny.pth zqx_4090_1@10.60.150.2:/home/students/zqx_4090_1/person_search/SEAS/ModelWeights/SOLIDER
+scp -r /Users/zhangqixian/PycharmProjects/pycode/swin_small.pth zqx_4090_1@10.60.150.2:/home/students/zqx_4090_1/person_search/SEAS/ModelWeights/SOLIDER
+scp -r /Users/zhangqixian/PycharmProjects/pycode/swin_base.pth zqx_4090_1@10.60.150.2:/home/students/zqx_4090_1/person_search/SEAS/ModelWeights/SOLIDER
+
+
+试试这个 （4090上也试试这个,就是这个可以的）
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+
+
+SEAS1：
+conda create -n SEAS1 python=3.9.17
+pip install -r requr.....
+#pytorch-cuda==11.7
+#python==3.9.17
+注释掉这两个
+
+conda install tensorboard -c conda-forge
+pip install yacs
+pip install scipy
+pip install opencv-python
+pip install pyyaml-include==1.3.1
+
+一定注意 版本
+numpy==1.25.1
+4090cudan 版本12。0 更高一点  所以可以跑 torch2。0。1的
+tesla 是11。4 不匹配/

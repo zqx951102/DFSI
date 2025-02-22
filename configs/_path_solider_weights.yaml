@@ -1,0 +1,4 @@
+base_dir: /home/zqx_tesla/home/zqx_tesla/PersonReID/PersonReID2/SEAS-new/ModelWeights/SOLIDER
+tiny: swin_tiny.pth
+small: swin_small.pth
+base: swin_base.pth
