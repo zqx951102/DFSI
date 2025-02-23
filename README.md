@@ -52,14 +52,6 @@ Let's say `$ROOT` is the root directory.
 data
 ├── CUHK-SYSU
 ├── PRW
-exp_cuhk
-├── config.yaml
-├── epoch_xx.pth
-├── epoch_xx.pth
-exp_prw
-├── config.yaml
-├── epoch_xx.pth 
-├── epoch_xx.pth
 ```
 
 2. Following the link in the above table, download our pretrained model to anywhere you like, e.g., `$ROOT/exp_cuhk`
@@ -117,7 +109,7 @@ like this：
 | Name          | Address                                                       |
 | ------------- | ------------------------------------------------------------ |
 | swin_base.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
-| Swin_small.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
+| swin_small.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
 | swin_tiny.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
 
 ## Comparison with SOTA:
@@ -135,7 +127,7 @@ Remember that when you test other code, you still need to set it to 100！！
 
 
 ## Qualitative Results on PRW:
-<img src="./doc/6.jpg" />
+<img src="./doc/6.jpg" width="700" height="600"/>
 
 
 ## Acknowledgment
