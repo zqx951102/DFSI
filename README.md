@@ -128,7 +128,7 @@ Remember that when you test other code, you still need to set it to 100！！
 
 ## Qualitative Results on PRW:
 <div align="center">
-<img src="./doc/6.jpg" width="600" height="400"/>
+<img src="./doc/6.jpg" width="700" height="500"/>
 </div>
 
 ## Acknowledgment
