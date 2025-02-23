@@ -17,14 +17,14 @@ This repository hosts the source code of our paper: [DFSI]((https://github.com/z
 
 Challenges and Motivation:
 <div align="center">
-<img src="./doc/1.pdf" width="800" height="700"/>
+<img src="./doc/1.jpg" width="800" height="700"/>
 </div>
 
 
 The network structure:
 
 <div align="center">
-<img src="./doc/2.pdf" width="800" height="650"/>
+<img src="./doc/2.jpg" width="800" height="650"/>
 </div>
 
 
