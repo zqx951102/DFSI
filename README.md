@@ -24,7 +24,7 @@ Challenges and Motivation:
 The network structure:
 
 <div align="center">
-<img src="./doc/2.jpg" width="800" height="650"/>
+<img src="./doc/2.jpg" width="800" height="450"/>
 </div>
 
 
