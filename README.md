@@ -107,12 +107,15 @@ like this：
 <div align="center">
 <img src="./doc/8.jpg" />
 </div>
+
 <div align="center">
+  
 | Name          | Address                                                       |
 | ------------- | ------------------------------------------------------------ |
 | swin_base.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
 | swin_small.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
 | swin_tiny.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
+
 </div>
 
 ## Comparison with SOTA:
@@ -121,7 +124,7 @@ like this：
 ## Evaluation of different gallery size:
 
 <div align="center">
-<img src="./doc/4.jpg" width="700" height="380"/>
+<img src="./doc/4.jpg" width="700" height="360"/>
 </div>
 Remember that when you test other code, you still need to set it to 100！！
 
