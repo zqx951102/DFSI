@@ -1,7 +1,7 @@
 ## ↳ Stargazers
-[![Stargazers repo roster for @zqx951102/ASTD](https://reporoster.com/stars/zqx951102/ASTD)](https://github.com/zqx951102/ASTD/stargazers)
+[![Stargazers repo roster for @zqx951102/DFSI](https://reporoster.com/stars/zqx951102/DFSI)](https://github.com/zqx951102/DFSI/stargazers)
 ## ↳ Forkers
-[![Forkers repo roster for @zqx951102/ASTD](https://reporoster.com/forks/zqx951102/ASTD)](https://github.com/zqx951102/ASTD/network/members)
+[![Forkers repo roster for @zqx951102/DFSI](https://reporoster.com/forks/zqx951102/DFSI)](https://github.com/zqx951102/DFSI/network/members)
 
 
 ![Python >=3.5](https://img.shields.io/badge/Python->=3.5-yellow.svg)
