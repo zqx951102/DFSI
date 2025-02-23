@@ -17,7 +17,7 @@ This repository hosts the source code of our paper: [DFSI]((https://github.com/z
 
 Challenges and Motivation:
 <div align="center">
-<img src="./doc/1.jpg" width="600" height="400"/>
+<img src="./doc/1.jpg" width="600" height="500"/>
 </div>
 
 
