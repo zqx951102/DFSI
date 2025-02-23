@@ -57,12 +57,14 @@ data
 2. Following the link in the above table, download our pretrained model to anywhere you like, e.g., `$ROOT/exp_cuhk`
 
 Performance profile:
-
+<div align="center">
+  
 | Dataset   | Name          | ASTD                                                        |
 | --------- | ------------- | ------------------------------------------------------------ |
 | CUHK-SYSU | epoch_12.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
 | PRW       | epoch_13.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
 
+</div>
 
 Please see the Demo photo:
 
@@ -119,7 +121,11 @@ like this：
 </div>
 
 ## Comparison with SOTA:
-<img src="./doc/7.jpg" />
+
+<div align="center">
+<img src="./doc/7.jpg" width="700" height="560"/>
+</div>
+
 
 ## Evaluation of different gallery size:
 
