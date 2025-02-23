@@ -121,7 +121,7 @@ like this：
 ## Evaluation of different gallery size:
 
 <div align="center">
-<img src="./doc/4.jpg" width="700" height="400"/>
+<img src="./doc/4.jpg" width="700" height="380"/>
 </div>
 Remember that when you test other code, you still need to set it to 100！！
 
@@ -133,7 +133,7 @@ Remember that when you test other code, you still need to set it to 100！！
 
 ## Qualitative Results on PRW:
 <div align="center">
-<img src="./doc/6.jpg" width="700" height="450"/>
+<img src="./doc/6.jpg" width="700" height="420"/>
 </div>
 
 ## Acknowledgment
