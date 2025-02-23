@@ -118,7 +118,7 @@ like this：
 ## Evaluation of different gallery size:
 
 <div align="center">
-<img src="./doc/4.jpg" width="700" height="600"/>
+<img src="./doc/4.jpg" width="700" height="400"/>
 </div>
 Remember that when you test other code, you still need to set it to 100！！
 
