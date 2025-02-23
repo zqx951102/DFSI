@@ -104,7 +104,9 @@ python train.py --cfg configs/cuhk_sysu.yaml --resume --ckpt /path/to/your/check
 
 **Note**: You need to modify the base_dir address in the file ./configs/_path_solider_weights.yaml.
 like this：
+<div align="center">
 <img src="./doc/8.jpg" />
+</div>
 
 | Name          | Address                                                       |
 | ------------- | ------------------------------------------------------------ |
