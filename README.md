@@ -15,16 +15,16 @@
 This repository hosts the source code of our paper: [DFSI]((https://github.com/zqx951102/DFSI)). 
 
 
-major challenges:
+Challenges and Motivation:
 <div align="center">
-<img src="./doc/1.jpg" width="800" height="700"/>
+<img src="./doc/1.pdf" width="800" height="700"/>
 </div>
 
 
 The network structure:
 
 <div align="center">
-<img src="./doc/2.jpg" width="800" height="650"/>
+<img src="./doc/2.pdf" width="800" height="650"/>
 </div>
 
 
@@ -72,41 +72,36 @@ Performance profile:
 | PRW       | epoch_13.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
 
 
-3. Run an inference demo by specifing the paths of checkpoint and corresponding configuration file.  You can checkout the result in `demo_imgs` directory.
-
-CUHK-SYSU：
-```
-CUDA_VISIBLE_DEVICES=0 python demo.py --cfg ./configs/cuhk_sysu.yaml --ckpt ./logs/cuhk-sysu/xxx.pth
-```
-PRW：
-```
-CUDA_VISIBLE_DEVICES=0 python demo.py --cfg ./configs/prw.yaml --ckpt ./logs/prw/xxx.pth
-```
 Please see the Demo photo:
 
 <div align="center">
 <img src="./doc/query.jpg" width="800" height="650"/>
 </div>
-## Training
 
-Pick one configuration file you like in `$ROOT/configs`, and run with it.
-
-```
-python train.py --cfg configs/cuhk_sysu.yaml
-```
 
 **Note**: At present, our script only supports single GPU training, but distributed training will be also supported in future. By default, the batch size and the learning rate during training are set to 3 and 0.003 respectively, which requires about 28GB of GPU memory. If your GPU cannot provide the required memory, try smaller batch size and learning rate (*performance may degrade*). Specifically, your setting should follow the [*Linear Scaling Rule*](https://arxiv.org/abs/1706.02677): When the minibatch size is multiplied by k, multiply the learning rate by k. For example:
 
+
+
+## Training
 ```
 CUHK:
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/cuhk_sysu.yaml INPUT.BATCH_SIZE_TRAIN 3 SOLVER.BASE_LR 0.003 SOLVER.MAX_EPOCHS 20 SOLVER.LR_DECAY_MILESTONES [11] MODEL.LOSS.USE_SOFTMAX True SOLVER.LW_RCNN_SOFTMAX_2ND 0.1 SOLVER.LW_RCNN_SOFTMAX_3RD 0.1 OUTPUT_DIR ./logs/cuhk-sysu
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/cuhk_sysu_resnet.yaml
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/cuhk_sysu_convnext.yaml
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/cuhk_sysu_solider.yaml
 
-if out of memory, run this：
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/cuhk_sysu.yaml INPUT.BATCH_SIZE_TRAIN 2 SOLVER.BASE_LR 0.0012 SOLVER.MAX_EPOCHS 20 SOLVER.LR_DECAY_MILESTONES [11] MODEL.LOSS.USE_SOFTMAX True SOLVER.LW_RCNN_SOFTMAX_2ND 0.1 SOLVER.LW_RCNN_SOFTMAX_3RD 0.1 OUTPUT_DIR ./logs/cuhk-sysu
-PRW:
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw.yaml INPUT.BATCH_SIZE_TRAIN 3 SOLVER.BASE_LR 0.003 SOLVER.MAX_EPOCHS 14 SOLVER.LR_DECAY_MILESTONES [11] MODEL.LOSS.USE_SOFTMAX True SOLVER.LW_RCNN_SOFTMAX_2ND 0.1 SOLVER.LW_RCNN_SOFTMAX_3RD 0.1 OUTPUT_DIR ./logs/prw 
+PRW：
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw_resnet.yaml
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw_convnext.yaml
+CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw_solider.yaml
 
 
+if out of memory, modify this：
+./configs/cuhk_sysu_convnext.yaml    BATCH_SIZE: 3  #5
+
+Before running, you need to modify the addresses in these two files and link them to the directory where your data is located.
+./configs/_path_cuhk_sysu.yaml
+./configs/_path_prw.yaml
 ```
 
 **Tip**: If the training process stops unexpectedly, you can resume from the specified checkpoint.
@@ -115,30 +110,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw.yaml INPUT.BATCH_SIZE_T
 python train.py --cfg configs/cuhk_sysu.yaml --resume --ckpt /path/to/your/checkpoint
 ```
 
-## Test
 
-Suppose the output directory is `$ROOT/exp_cuhk`. Test the trained model:
-
-For CUHK-SYSU：
-```
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg ./configs/cuhk_sysu.yaml --eval --ckpt ./logs/cuhk-sysu/xxx.pth
-```
-
-Test with Context Bipartite Graph Matching algorithm:
-
-```
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg ./configs/cuhk_sysu.yaml --eval --ckpt ./logs/cuhk-sysu/xxx.pth EVAL_USE_CBGM True
-```
-
-Test the upper bound of the person search performance by using GT boxes:
-
-```
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg ./configs/cuhk_sysu.yaml --eval --ckpt ./logs/cuhk-sysu/xxx.pth EVAL_USE_GT True
-```
-For PRW：
-```
-CUDA_VISIBLE_DEVICES=0 python train.py --cfg ./configs/prw.yaml --eval --ckpt ./logs/prw/xxx.pth EVAL_USE_CBGM True
-```
 
 
 
