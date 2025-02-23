@@ -75,7 +75,7 @@ Performance profile:
 Please see the Demo photo:
 
 <div align="center">
-<img src="./doc/query.jpg" width="800" height="650"/>
+<img src="./doc/query.jpg" width="600" height="450"/>
 </div>
 
 
