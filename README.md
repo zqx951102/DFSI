@@ -107,12 +107,13 @@ like this：
 <div align="center">
 <img src="./doc/8.jpg" />
 </div>
-
+<div align="center">
 | Name          | Address                                                       |
 | ------------- | ------------------------------------------------------------ |
 | swin_base.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
 | swin_small.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
 | swin_tiny.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
+</div>
 
 ## Comparison with SOTA:
 <img src="./doc/7.jpg" />
@@ -126,7 +127,7 @@ Remember that when you test other code, you still need to set it to 100！！
 
 ## Qualitative Results on CUHK-SYSU:
 <div align="center">
-<img src="./doc/5.jpg" width="700" height="600"/>
+<img src="./doc/5.jpg" width="700" height="580"/>
 </div>
 
 
