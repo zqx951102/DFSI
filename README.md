@@ -97,7 +97,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw_solider.yaml
 
 
 if out of memory, modify this：
-./configs/cuhk_sysu_convnext.yaml    BATCH_SIZE: 3  #5
+./configs/cuhk_sysu_convnext.yaml    BATCH_SIZE: 3  #5  
 
 Before running, you need to modify the addresses in these two files and link them to the directory where your data is located.
 ./configs/_path_cuhk_sysu.yaml
@@ -110,25 +110,31 @@ Before running, you need to modify the addresses in these two files and link the
 python train.py --cfg configs/cuhk_sysu.yaml --resume --ckpt /path/to/your/checkpoint
 ```
 
+**Note**: You need to modify the base_dir address in the file ./configs/_path_solider_weights.yaml.
+like this：
+<img src="./doc/8.jpg" />
 
-
-
+| Name          | Address                                                       |
+| ------------- | ------------------------------------------------------------ |
+| swin_base.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
+| Swin_small.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
+| swin_tiny.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
 
 ## Comparison with SOTA:
-<img src="./doc/4.jpg" />
+<img src="./doc/7.jpg" />
 
 ## Evaluation of different gallery size:
 
-<img src="./doc/gallery-size.jpg" />
+<img src="./doc/4.jpg" />
 Remember that when you test other code, you still need to set it to 100！！
 
-## Visualization of ASA:
+## Qualitative Results on CUHK-SYSU:
 <div align="center">
 <img src="./doc/5.jpg" width="700" height="600"/>
 </div>
 
 
-## Qualitative Results:
+## Qualitative Results on PRW:
 <img src="./doc/6.jpg" />
 
 
