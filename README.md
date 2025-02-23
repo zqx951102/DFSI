@@ -31,7 +31,7 @@ The network structure:
 ****
 ## :fire: NEWS :fire:
 
-- [03/2025] **📣We submitted our paper to the Journal of Information Fusion!**
+- [03/2025] **📣We submitted our paper to Information Fusion!**
   
 - [02/2025] **📣We released the code.**
 
