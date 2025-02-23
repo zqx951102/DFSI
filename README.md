@@ -61,8 +61,8 @@ Performance profile:
   
 | Dataset   | Name          | ASTD                                                        |
 | --------- | ------------- | ------------------------------------------------------------ |
-| CUHK-SYSU | epoch_12.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
-| PRW       | epoch_13.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
+| CUHK-SYSU | ckpt_epoch_12.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
+| PRW       | ckpt_epoch_13.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
 
 </div>
 
