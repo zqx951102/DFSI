@@ -114,11 +114,12 @@ like this：
   
 | Name          | Address                                                       |
 | ------------- | ------------------------------------------------------------ |
-| swin_base.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
-| swin_small.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
-| swin_tiny.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
+| swin_base.pth  |[model](https://drive.google.com/file/d/1uh7tO34tMf73MJfFqyFEGx42UBktTbZU/view?usp=drive_link)|
+| swin_small.pth  |[model](https://drive.google.com/file/d/11uYzAkAv_8EvqpsKyK6W6ZM76UlnFbmo/view?usp=sharing)|
+| swin_tiny.pth  |[model](https://drive.google.com/file/d/12UyPVFmjoMVpQLHN07tNh4liHUmyDqg8/view?usp=drive_link)|
 
 </div>
+
 
 ## Comparison with SOTA:
 
