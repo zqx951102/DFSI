@@ -125,7 +125,7 @@ like this：
 ## Comparison with SOTA:
 
 <div align="center">
-<img src="./doc/7.jpg" width="700" height="590"/>
+<img src="./doc/7.jpg" width="680" height="590"/>
 </div>
 
 
