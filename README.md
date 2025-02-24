@@ -1,7 +1,8 @@
 ## ↳ Stargazers
-[![Stargazers repo roster for @zqx951102/ASTD](https://reporoster.com/stars/zqx951102/ASTD)](https://github.com/zqx951102/ASTD/stargazers)
+[![Stargazers repo roster for @zqx951102/DFSI](https://reporoster.com/stars/zqx951102/DFSI)](https://github.com/zqx951102/DFSI/stargazers)
+
 ## ↳ Forkers
-[![Forkers repo roster for @zqx951102/ASTD](https://reporoster.com/forks/zqx951102/ASTD)](https://github.com/zqx951102/ASTD/network/members)
+[![Forkers repo roster for @zqx951102/DFSI](https://reporoster.com/forks/zqx951102/DFSI)](https://github.com/zqx951102/DFSI/network/members)
 
 
 ![Python >=3.5](https://img.shields.io/badge/Python->=3.5-yellow.svg)
@@ -31,7 +32,7 @@ The network structure:
 ****
 ## :fire: NEWS :fire:
 
-- [03/2025] **📣We submitted our paper to the Journal of Information Fusion!**
+- [03/2025] **📣We submitted our paper to Information Fusion!**
   
 - [02/2025] **📣We released the code.**
 
@@ -52,25 +53,19 @@ Let's say `$ROOT` is the root directory.
 data
 ├── CUHK-SYSU
 ├── PRW
-exp_cuhk
-├── config.yaml
-├── epoch_xx.pth
-├── epoch_xx.pth
-exp_prw
-├── config.yaml
-├── epoch_xx.pth 
-├── epoch_xx.pth
 ```
 
 2. Following the link in the above table, download our pretrained model to anywhere you like, e.g., `$ROOT/exp_cuhk`
 
 Performance profile:
-
+<div align="center">
+  
 | Dataset   | Name          | ASTD                                                        |
 | --------- | ------------- | ------------------------------------------------------------ |
-| CUHK-SYSU | epoch_12.pth  | [model](https://drive.google.com/file/d/16MQbaucjzKeXuadtVqTsZ0j0nQeG-q7M/view?usp=drive_link)|
-| PRW       | epoch_13.pth  | [model](https://drive.google.com/file/d/1bXAGV7XGDuDatqx1VM6uJ28hWG-AOuhJ/view?usp=drive_link) |
+| CUHK-SYSU | ckpt_epoch_12.pth  | [model](https://drive.google.com/file/d/17mDmKqheoOtlb7iRLqFK7yV1H-DWyEJO/view?usp=sharing)|
+| PRW       | ckpt_epoch_13.pth  | [model](https://drive.google.com/file/d/17-rU8ep-bA1NN55hxHErfKPeW91eG0Zv/view?usp=sharing) |
 
+</div>
 
 Please see the Demo photo:
 
@@ -97,7 +92,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --cfg configs/prw_solider.yaml
 
 
 if out of memory, modify this：
-./configs/cuhk_sysu_convnext.yaml    BATCH_SIZE: 3  #5
+./configs/cuhk_sysu_convnext.yaml    BATCH_SIZE: 3  #5  
 
 Before running, you need to modify the addresses in these two files and link them to the directory where your data is located.
 ./configs/_path_cuhk_sysu.yaml
@@ -110,27 +105,47 @@ Before running, you need to modify the addresses in these two files and link the
 python train.py --cfg configs/cuhk_sysu.yaml --resume --ckpt /path/to/your/checkpoint
 ```
 
-
-
-
-
-## Comparison with SOTA:
-<img src="./doc/4.jpg" />
-
-## Evaluation of different gallery size:
-
-<img src="./doc/gallery-size.jpg" />
-Remember that when you test other code, you still need to set it to 100！！
-
-## Visualization of ASA:
+**Note**: You need to modify the base_dir address in the file ./configs/_path_solider_weights.yaml.
+like this：
 <div align="center">
-<img src="./doc/5.jpg" width="700" height="600"/>
+<img src="./doc/8.jpg" />
+</div>
+
+<div align="center">
+  
+| Name          | Address                                                       |
+| ------------- | ------------------------------------------------------------ |
+| swin_base.pth  |[model](https://drive.google.com/file/d/1uh7tO34tMf73MJfFqyFEGx42UBktTbZU/view?usp=drive_link)|
+| swin_small.pth  |[model](https://drive.google.com/file/d/11uYzAkAv_8EvqpsKyK6W6ZM76UlnFbmo/view?usp=sharing)|
+| swin_tiny.pth  |[model](https://drive.google.com/file/d/12UyPVFmjoMVpQLHN07tNh4liHUmyDqg8/view?usp=drive_link)|
+
 </div>
 
 
-## Qualitative Results:
-<img src="./doc/6.jpg" />
+## Comparison with SOTA:
 
+<div align="center">
+<img src="./doc/7.jpg" width="700" height="590"/>
+</div>
+
+
+## Evaluation of different gallery size:
+
+<div align="center">
+<img src="./doc/4.jpg" width="700" height="360"/>
+</div>
+Remember that when you test other code, you still need to set it to 100！！
+
+## Qualitative Results on CUHK-SYSU:
+<div align="center">
+<img src="./doc/5.jpg" width="700" height="580"/>
+</div>
+
+
+## Qualitative Results on PRW:
+<div align="center">
+<img src="./doc/6.jpg" width="700" height="420"/>
+</div>
 
 ## Acknowledgment
 Thanks to the authors of the following repos for their code, which was integral in this project:
