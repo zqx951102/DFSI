@@ -32,9 +32,9 @@ The network structure:
 ****
 ## :fire: NEWS :fire:
 
-- [03/2025] **📣We submitted our paper to Information Fusion!**
+- [25/02/2025] **📣We submitted our paper to Information Fusion!**
   
-- [02/2025] **📣We released the code.**
+- [23/02/2025] **📣We released the code.**
 
 
 
