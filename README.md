@@ -32,15 +32,15 @@ The network structure:
 ****
 ## :fire: NEWS :fire:
 
-- [07/05/2025] **📣Accept**
+- [2025.5.7] **📣Accept**
   
-- [29/04/2025] **📣We received comments requiring minor revisions from the Journal of Information Fusion!**
+- [2025.4.29] **📣We received comments requiring minor revisions from the Journal of Information Fusion!**
 
-- [01/04/2025] **📣We received comments requiring major revisions from the Journal of Information Fusion!**
+- [2025.4.1] **📣We received comments requiring major revisions from the Journal of Information Fusion!**
 
-- [25/02/2025] **📣We submitted our paper to Information Fusion!**
+- [2025.2.25] **📣We submitted our paper to Information Fusion!**
   
-- [23/02/2025] **📣We released the code.**
+- [2025.2.23] **📣We released the code.**
 
 
 
