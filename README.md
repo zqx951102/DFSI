@@ -13,7 +13,7 @@
 <img src="doc/0.jpg" width="300" height="100" alt="图片名称"/>
 </div>
 
-This repository hosts the source code of our paper: [DFSI]((https://github.com/zqx951102/DFSI)). 
+This repository hosts the source code of our paper: [Dynamic Frequency Selection and Spatial Interaction Fusion for Robust Person Search]((https://github.com/zqx951102/DFSI)). 
 
 
 Challenges and Motivation:
