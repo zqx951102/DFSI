@@ -168,6 +168,17 @@ Pull request is welcomed! Before submitting a PR, **DO NOT** forget to run `./de
 ## Citation
 If you find this code useful for your research, please cite our paper
 ```
+@article{zhang2025dynamic,
+  title={Dynamic frequency selection and spatial interaction fusion for robust person search},
+  author={Zhang, Qixian and Miao, Duoqian and Zhang, Qi and Zhao, Cairong and Zhang, Hongyun and Sun, Ye and Wang, Ruizhi},
+  journal={Information Fusion},
+  volume={124},
+  pages={103314},
+  year={2025},
+  publisher={Elsevier}
+}
+
+
 @article{zhang2024learning,
   title={Learning adaptive shift and task decoupling for discriminative one-step person search},
   author={Zhang, Qixian and Miao, Duoqian and Zhang, Qi and Wang, Changwei and Li, Yanping and Zhang, Hongyun and Zhao, Cairong},
