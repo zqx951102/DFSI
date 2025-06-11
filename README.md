@@ -177,8 +177,8 @@ If you find this code useful for your research, please cite our paper
   year={2025},
   publisher={Elsevier}
 }
-
-
+```
+```
 @article{zhang2024learning,
   title={Learning adaptive shift and task decoupling for discriminative one-step person search},
   author={Zhang, Qixian and Miao, Duoqian and Zhang, Qi and Wang, Changwei and Li, Yanping and Zhang, Hongyun and Zhao, Cairong},
